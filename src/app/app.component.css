@@ -53,6 +53,14 @@
   padding:4px;
 }
 
+.header{
+  height: 70px;
+  background-color: #017a40;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color:white;
+  font-weight: 600;
+}
 
 @media (max-width: 348px){
 .custom-container{
@@ -72,6 +80,10 @@
   .scoreinput{
     width: 7rem;
     height: 2rem;
+  }
+
+  .header{
+    font-size: 18px;
   }
 }
 
@@ -97,6 +109,10 @@
     width: 7rem;
     height: 2rem;
   }
+
+  .header{
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 567px) {
@@ -112,12 +128,16 @@
   }
 
   .box{
-    height: 20vh;
+    height: 20h;
   }
 
   .scoreinput{
     width: 8rem;
     height: 2rem;
+  }
+
+  .header{
+    font-size: 25px;
   }
 }
 
@@ -141,6 +161,10 @@
     width: 8rem;
     height: 2rem;
   }
+
+  .header{
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -163,6 +187,10 @@
     width: 9rem;
     height: 2rem;
   }
+
+  .header{
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -184,5 +212,9 @@
   .scoreinput{
     width: 9rem;
     height: 2rem;
+  }
+
+  .header{
+    font-size: 40px;
   }
 }
