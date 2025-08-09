@@ -6,141 +6,117 @@
   <div class="main-court mt-3">
     <div class="row " id="court" >
       <div class="col box d-flex align-items-center justify-content-center">
-        Player 1
+        @if (isStart) {
+          {{this.team1[0].PlayerName}}
+        } @else {
+          Waiting
+        }
       </div>
       <div class="col box d-flex align-items-center justify-content-center">
-        Player 3
+        @if (isStart) {
+          {{this.team2[0].PlayerName}}
+        } @else {
+          Waiting
+        }
       </div>
     </div>
     <div class="row" id="court" >
       <div class="col box d-flex align-items-center justify-content-center">
-        Player 2
-      </div>
+        @if (isStart) {
+          {{this.team1[1].PlayerName}}
+        } @else {
+          Waiting
+        }      </div>
       <div class="col box d-flex align-items-center justify-content-center">
-        Player 4
-      </div>
+        @if (isStart) {
+          {{this.team2[1].PlayerName}}
+        } @else {
+          Waiting
+        }      </div>
     </div>
   </div>
   <!-- Scoring -->
   <div class="score-board mt-3">
     <div class="row">
       <div class="col team1">
-        Player 1 & Player 2
+        @if (isStart) {
+          {{this.team1[0].PlayerName}} & {{this.team1[1].PlayerName}}
+        } @else {
+          Waiting
+        }
       </div>
       <div class="col team2">
-        Player 3 & Player 4
+        @if (isStart) {
+          {{this.team2[0].PlayerName}} & {{this.team2[1].PlayerName}}
+        } @else {
+          Waiting
+        }
       </div>
     </div>
     <div class="row">
       <div class="col playerscore1">
-        <input class="scoreinput" type="text" placeholder="Input Score">
+        <input class="scoreinput" type="number" placeholder="Input Score" [(ngModel)]="team1Score">
       </div>
       <div class="col playerscore2">
-        <input class="scoreinput" type="text" placeholder="Input Score">
+        <input class="scoreinput" type="number" placeholder="Input Score" [(ngModel)]="team2Score">
       </div>
     </div>
+  @if (isStart == false) {
     <div class="row mt-2">
       <div class="col startend-btn">
-        <button class="startgame">Start</button>
+        <button class="startgame" (click)="onButton('Start')"> Start </button>
       </div>
     </div>
+  } @else if (isStart == true) {
+    <div class="row mt-2">
+      <div class="col startend-btn">
+        <button class="endgame" (click)="onButton('End')"> End </button>
+      </div>
+    </div>
+  }
+
   </div>
 
   <!-- Adding Player / Player List -->
-   <div class="playerlist">
+  <div class="playerlist">
     <div class="row">
       <div class="col-sm-6 p-0">
         <div class="col playerinput input-group mt-3">
-          <input class="inputplayer" type="text" placeholder="Input Player Name">
-          <button class="addplayer">+</button>
+          <input class="inputplayer" type="text" placeholder="Input Player Name" [(ngModel)]="playerNames">
+          <button class="addplayer" (click)="onButton('AddPlayer')">+</button>
         </div>
         <div class="col mt-2">
           <div class="playertable">
             <table class="playerListTable table">
-            <thead class="theads">
-              <tr>
-                <th class="playernumber" >#</th>
-                <th class="playername text-center">Player Name</th>
-                <th class="playergame text-center">Game</th>
-                <th class="playerwins text-center">Wins</th>
-                <th class="playerlose text-center">Lose</th>
-              </tr>
-            </thead>
-            <tbody class="tbodys">
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th class="text-center">Roger</th>
-                <th class="text-center">5</th>
-                <th class="text-center">3</th>
-                <th class="text-center">2</th>
-              </tr>
-            </tbody>
-          </table>
+              <thead class="theads">
+                <tr>
+                  <th class="playernumber">#</th>
+                  <th class="playername text-center">Player Name</th>
+                  <th class="playergame text-center">Game</th>
+                  <th class="playerwins text-center">Wins</th>
+                  <th class="playerlose text-center">Lose</th>
+                </tr>
+              </thead>
+              <tbody class="tbodys">
+                <tr *ngFor="let item of playerList">
+                  <td>{{ item.Num }}</td>
+                  <td class="text-center">{{ item.PlayerName }}</td>
+                  <td class="text-center">{{ item.Game }}</td>
+                  <td class="text-center">{{ item.Wins }}</td>
+                  <td class="text-center">{{ item.Lose }}</td>
+                </tr>
+              </tbody>
+            </table>
+
           </div>
         </div>
       </div>
-       <div class="col-sm-6">
+      <div class="col-sm-6">
 
       </div>
 
     </div>
-   </div>
+  </div>
 </div>
 <!-- footer -->
 <div class="footered text-center mt-5 p-3">

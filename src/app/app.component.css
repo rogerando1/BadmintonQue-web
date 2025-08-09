@@ -34,6 +34,11 @@
   padding:4px;
 }
 
+.playerscore1 input::-webkit-outer-spin-button,
+.playerscore1 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .playerscore2{
   font-size: 0.7rem;
   text-align: start;
@@ -53,12 +58,32 @@
   padding:4px;
 }
 
+.playerscore2 input::-webkit-outer-spin-button,
+.playerscore2 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .startend-btn{
   text-align: center;
   align-items: center;
 }
 
 .startgame{
+  font-size: 1rem;
+  color: black;
+  border: 1px solid #428e22;
+  border-radius: 5px;
+  padding:3px;
+  width: 80px;
+  background-color: white;
+}
+
+.startend-btn{
+  text-align: center;
+  align-items: center;
+}
+
+.endgame{
   font-size: 1rem;
   color: black;
   border: 1px solid #428e22;
