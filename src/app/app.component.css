@@ -189,6 +189,9 @@ th, tr{
   }
 }
 
+.footered{
+  background-color: #949795;
+}
 
 @media (min-width: 349px){
   .custom-container{
