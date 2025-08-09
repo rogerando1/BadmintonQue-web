@@ -68,10 +68,6 @@
   background-color: white;
 }
 
-.startgame:hover{
-  background-color: #0cd16f;
-}
-
 .header{
   height: 70px;
   background-color: #017a40;
@@ -106,10 +102,6 @@
   border-top-right-radius: 5px;
 }
 
-.addplayer:hover{
-  background-color: #0cd16f;
-}
-
 th, tr{
   font-weight: 400;
 }
@@ -128,6 +120,18 @@ th, tr{
   border: 1px solid rgb(0, 138, 46);
   height: 300px;
   overflow: auto scroll;
+}
+.playertable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.playertable::-webkit-scrollbar-thumb {
+  background-color: #666363;
+  border-radius: 4px;
+}
+
+.playertable::-webkit-scrollbar-track {
+  background: #06753f;
 }
 
 .playerListTable thead th {
@@ -233,7 +237,7 @@ th, tr{
   }
 
   .playerListTable{
-    width: 318px;
+    width: 310px;
   }
 
   .inputplayer{
@@ -293,7 +297,7 @@ th, tr{
   }
 
   .playerListTable{
-    width: 538px;
+    width: 530px;
   }
 
   .inputplayer{
@@ -353,7 +357,7 @@ th, tr{
   }
 
   .playerListTable{
-    width: 358px;
+    width: 350px;
   }
 
   .inputplayer{
@@ -413,7 +417,7 @@ th, tr{
   }
 
   .playerListTable{
-    width: 358px;
+    width: 470px;
   }
 
   .inputplayer{
@@ -477,7 +481,7 @@ th, tr{
   }
 
   .playerListTable{
-    width: 568px;
+    width: 560px;
   }
 
   .inputplayer{
