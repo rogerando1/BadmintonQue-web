@@ -1,0 +1,34 @@
+@media (min-width: 349px){
+  .custom-container{
+    max-width: 320px;
+  }
+  .box{
+      border: solid 1px gray;
+      height: 12vh;
+      width: 15vh;
+    }
+}
+@media (min-width: 567px) {
+  .box{
+    border: solid 1px gray;
+    height: 20vh;
+  }
+}
+@media (min-width: 768px) {
+  .box{
+    border: solid 1px gray;
+    height: 20vh;
+  }
+}
+@media (min-width: 992px) {
+  .box{
+    border: solid 1px gray;
+    height: 20vh;
+  }
+}
+@media (min-width: 1200px) {
+  .box{
+    border: solid 1px gray;
+    height: 20vh;
+  }
+}
