@@ -19,6 +19,7 @@ font-size: 0.7rem;
   text-align: end;
   align-items: end;
   padding: 5px;
+  width: 10%;
 }
 
 .playerscore1 input{
@@ -28,6 +29,7 @@ font-size: 0.7rem;
   outline: none;
   border: 1px solid #428e22;
   border-radius: 2px;
+  padding:4px;
 }
 
 .playerscore2{
@@ -35,6 +37,7 @@ font-size: 0.7rem;
   text-align: start;
   align-items: start;
   padding: 5px;
+  width: 10%;
 }
 
 .playerscore2 input{
@@ -45,6 +48,7 @@ font-size: 0.7rem;
   color: black;
   border: 1px solid #428e22;
   border-radius: 2px;
+  padding:4px;
 }
 
 
