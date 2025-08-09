@@ -53,6 +53,25 @@
   padding:4px;
 }
 
+.startend-btn{
+  text-align: center;
+  align-items: center;
+}
+
+.startgame{
+  font-size: 1rem;
+  color: black;
+  border: 1px solid #428e22;
+  border-radius: 5px;
+  padding:3px;
+  width: 80px;
+  background-color: white;
+}
+
+.startgame:hover{
+  background-color: #0cd16f;
+}
+
 .header{
   height: 70px;
   background-color: #017a40;
@@ -60,6 +79,63 @@
   border-bottom-right-radius: 20px;
   color:white;
   font-weight: 600;
+}
+
+.inputplayer{
+  font-size: 0.7rem;
+  text-align: center;
+  align-items: center;
+  outline: none;
+  border: 1px solid #428e22;
+  border-radius: 2px;
+  padding:4px;
+  outline: none;
+}
+
+.addplayer{
+  font-size: 0.7rem;
+  text-align: center;
+  align-items: center;
+  outline: none;
+  border: 1px solid #428e22;
+  background-color:white;
+  border-radius: 2px;
+  padding:4px;
+  outline: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.addplayer:hover{
+  background-color: #0cd16f;
+}
+
+th, tr{
+  font-weight: 400;
+}
+
+.theads > tr > th{
+  font-size: 12px;
+  background-color: #017a40;
+  color: white;
+}
+
+.tbodys > tr > th {
+  font-size: 12px;
+}
+
+.playertable{
+  border: 1px solid rgb(0, 138, 46);
+  height: 300px;
+  overflow: auto scroll;
+}
+
+.playerListTable thead th {
+  position: sticky;
+  top: 0;
+  background-color: #017a40;
+  color: white;
+  z-index: 2;
 }
 
 @media (max-width: 348px){
@@ -84,6 +160,28 @@
 
   .header{
     font-size: 18px;
+  }
+  .playername{
+    width: 30vh;
+  }
+
+  .playergame{
+  width: 4vh;
+  }
+
+  .playerwins{
+  width: 4vh;
+  }
+
+  .playerlose{
+  width: 4vh;
+  }
+
+  .playerListTable{
+    width: 280px;
+    height: 300px;
+    border: 1px solid rgb(2, 175, 31);
+    overflow-y: scroll;
   }
 }
 
@@ -113,6 +211,40 @@
   .header{
     font-size: 20px;
   }
+
+   .playernumber{
+    width: 1vh;
+  }
+
+  .playername{
+    width: 30vh;
+  }
+
+  .playergame{
+  width: 4vh;
+  }
+
+  .playerwins{
+  width: 4vh;
+  }
+
+  .playerlose{
+  width: 4vh;
+  }
+
+  .playerListTable{
+    width: 318px;
+  }
+
+  .inputplayer{
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .addplayer{
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media (min-width: 567px) {
@@ -138,6 +270,40 @@
 
   .header{
     font-size: 25px;
+  }
+
+  .playernumber{
+    width: 1vh;
+  }
+
+  .playername{
+    width: 30vh;
+  }
+
+  .playergame{
+  width: 4vh;
+  }
+
+  .playerwins{
+  width: 4vh;
+  }
+
+  .playerlose{
+  width: 4vh;
+  }
+
+  .playerListTable{
+    width: 538px;
+  }
+
+  .inputplayer{
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .addplayer{
+    width: 2rem;
+    height: 2rem;
   }
 }
 
@@ -165,6 +331,40 @@
   .header{
     font-size: 40px;
   }
+
+  .playernumber{
+    width: 1vh;
+  }
+
+  .playername{
+    width: 30vh;
+  }
+
+  .playergame{
+  width: 4vh;
+  }
+
+  .playerwins{
+  width: 4vh;
+  }
+
+  .playerlose{
+  width: 4vh;
+  }
+
+  .playerListTable{
+    width: 358px;
+  }
+
+  .inputplayer{
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .addplayer{
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -191,6 +391,40 @@
   .header{
     font-size: 40px;
   }
+
+  .playernumber{
+    width: 1vh;
+  }
+
+  .playername{
+    width: 30vh;
+  }
+
+  .playergame{
+  width: 4vh;
+  }
+
+  .playerwins{
+  width: 4vh;
+  }
+
+  .playerlose{
+  width: 4vh;
+  }
+
+  .playerListTable{
+    width: 358px;
+  }
+
+  .inputplayer{
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .addplayer{
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -216,5 +450,43 @@
 
   .header{
     font-size: 40px;
+  }
+
+  .playername{
+    width: 30vh;
+  }
+
+  .playernumber{
+    width: 1vh;
+  }
+
+  .playername{
+    width: 30vh;
+  }
+
+  .playergame{
+  width: 4vh;
+  }
+
+  .playerwins{
+  width: 4vh;
+  }
+
+  .playerlose{
+  width: 4vh;
+  }
+
+  .playerListTable{
+    width: 568px;
+  }
+
+  .inputplayer{
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .addplayer{
+    width: 2rem;
+    height: 2rem;
   }
 }
