@@ -1,34 +1,144 @@
-@media (min-width: 349px){
-  .custom-container{
+.box{
+    color: white;
+    background-color:#004322;
+    border: solid 1px #71b93a;
+  }
+
+.team1{
+  font-size: 0.7rem;
+  text-align: end;
+}
+
+.team2{
+font-size: 0.7rem;
+  text-align: start;
+}
+
+.playerscore1{
+  font-size: 0.7rem;
+  text-align: end;
+  align-items: end;
+  padding: 5px;
+}
+
+.playerscore1 input{
+  font-size: 0.7rem;
+  text-align: center;
+  align-items: center;
+  outline: none;
+  border: 1px solid #428e22;
+  border-radius: 2px;
+}
+
+.playerscore2{
+  font-size: 0.7rem;
+  text-align: start;
+  align-items: start;
+  padding: 5px;
+}
+
+.playerscore2 input{
+  font-size: 0.7rem;
+  text-align: center;
+  align-items: center;
+  outline: none;
+  color: black;
+  border: 1px solid #428e22;
+  border-radius: 2px;
+}
+
+
+@media (max-width: 348px){
+.custom-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
     max-width: 320px;
   }
   .box{
-      border: solid 1px gray;
-      height: 12vh;
-      width: 15vh;
-    }
+    height: 12vh;
+    width: 15vh;
+  }
+}
+
+
+@media (min-width: 349px){
+  .custom-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 320px;
+  }
+  .box{
+    height: 12vh;
+    width: 15vh;
+  }
 }
 @media (min-width: 567px) {
+  .custom-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 540px;
+  }
   .box{
-    border: solid 1px gray;
     height: 20vh;
   }
 }
 @media (min-width: 768px) {
+  .custom-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 720px;
+  }
   .box{
-    border: solid 1px gray;
     height: 20vh;
   }
 }
 @media (min-width: 992px) {
+  .custom-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+  }
   .box{
-    border: solid 1px gray;
     height: 20vh;
   }
 }
 @media (min-width: 1200px) {
+  .custom-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+  }
   .box{
-    border: solid 1px gray;
     height: 20vh;
   }
 }
